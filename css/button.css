@@ -1,0 +1,33 @@
+.gradient {
+    display: inline-block;
+    color: #fff;
+    padding: 18px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s ease-out;
+}
+
+.gradient:hover {
+    transform: scale(0.90);
+}
+
+.html1 {
+    background: linear-gradient(to right, #000000 0, #0088ff 40%, #00ffff 100%);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html2 {
+    background: linear-gradient(to right, #00ffff 0, #ff8888 100%);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html3 {
+    background: linear-gradient(to right, #ff8888 0, #88ff88 100%);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html4 {
+    background: linear-gradient(to right, #88ff88 0, #ffffff 100%);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
