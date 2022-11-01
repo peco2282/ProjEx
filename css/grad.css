@@ -15,36 +15,40 @@ p {
     background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
 }
- .asty {
+
+.asty {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(45deg, #00FFED, #0026FF, #FA00FF);
     background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
-    background: linear-gradient(45deg, #00FFED, #0026FF, #FA00FF);
 }
 
 .nick {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(45deg, #E5FF00, #00FF00, #00FFE9);
     background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
-    background: linear-gradient(45deg, #E5FF00, #00FF00, #00FFE9);
+
 }
 
 .omy {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(45deg, #FF8300, #FFCC00, #E9FF00);
     background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
-    background: linear-gradient(45deg, #FF8300, #FFCC00, #E9FF00);
+
 }
 
 .tai {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(45deg, #FF00FF, #FF003F, #FF7F00);
     background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
-    background: linear-gradient(45deg, #FF00FF, #FF003F, #FF7F00);
+
 }
 
 @keyframes bggradient {
