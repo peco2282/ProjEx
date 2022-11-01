@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .gradient {
     display: inline-block;
     color: #fff;
@@ -6,6 +8,7 @@
     text-decoration: none;
     outline: none;
     transition: all 0.5s ease-out;
+    height: 20px;
 }
 
 .gradient:hover {

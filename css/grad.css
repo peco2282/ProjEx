@@ -1,4 +1,5 @@
-/*========= レイアウトのためのCSS ===============*/
+@charset "UTF-8";
+
 
 p {
     position: absolute;
@@ -7,13 +8,11 @@ p {
     transform: translateY(-50%) translateX(-50%);
 }
 
-/*========= body背景色の変化CSS ===============*/
-
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, #ff8800, #ff88ff, #00ff88); /*グラデーションを定義*/
-    background-size: 200% 200%; /*サイズを大きくひきのばす*/
+    background: linear-gradient(45deg, #ff8800, #ff88ff, #00ff88);
+    background-size: 200% 200%;
     animation: bggradient 3s ease infinite;
 }
 
