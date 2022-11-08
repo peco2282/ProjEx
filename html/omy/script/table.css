@@ -1,0 +1,10 @@
+table.table {
+    background: #00FF00;
+}
+tr.table {
+    color: #E5FF00;
+}
+
+td.table, th.table {
+    color: black;
+}

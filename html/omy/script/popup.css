@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
 .flex {
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
 }
 
 .pop {
-    width: 220px;
+    width: inherit;
+    position: center;
     padding: 20px;
-    margin: 0 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
     background: #666;
     color: #fff;
     box-sizing:border-box;
@@ -19,16 +20,13 @@
     opacity: 0;
 }
 
-.popup {
+li.popup {
     margin: 10px;
+    border-radius: 20px;
     animation-name:popUpFunc;
     animation-duration:0.5s;
     animation-fill-mode:forwards;
     opacity: 0;
-}
-
-.title {
-    width: 700px;
 }
 
 @keyframes popUpFunc {
