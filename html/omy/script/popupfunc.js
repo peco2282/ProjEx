@@ -1,25 +1,24 @@
 function popUpFunc() {
-  const time = 0.2;//遅延時間を増やす秒数の値
+  const time = 0.2;
   let value = time;
 
   $('.popup').each(function () {
-    const parent = this;          //親要素を取得
-    const elemPos = $(this).offset().top;//要素の位置まで来たら
-    const scroll = $(window).scrollTop();//スクロール値を取得
-    const windowHeight = $(window).height();//画面の高さを取得
-    const childs = $(this).children();  //子要素を取得
+    const parent = this;
+    const elemPos = $(this).offset().top;
+    const scroll = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    const childs = $(this).children();
 
-    if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {//指定領域内にスクロールが入ったらまた親要素にクラスplayがなければ
+    if (scroll >= elemPos - windowHeight && !$(parent).hasClass("play")) {
       $(childs).each(function () {
 
-        if (!$(this).hasClass("popup")) {//アニメーションのクラス名が指定されているかどうかをチェック
+        if (!$(this).hasClass("popup")) {
 
-          $(parent).addClass("play"); //親要素にクラス名playを追加
-          $(this).css("animation-delay", value + "s");//アニメーション遅延のCSS animation-delayを追加し
-          $(this).addClass("popup");//アニメーションのクラス名を追加
-          value = value + time;//delay時間を増加させる
+          $(parent).addClass("play");
+          $(this).css("animation-delay", value + "s");
+          $(this).addClass("popup");
+          value = value + time;
 
-          //全ての処理を終わったらplayを外す
           const index = $(childs).index(this);
           if((childs.length-1) === index){
             $(parent).removeClass("play");console.log("funcPop")
@@ -27,8 +26,8 @@ function popUpFunc() {
         }
       })
     }else {
-      $(childs).removeClass("popUpFunc");//アニメーションのクラス名を削除
-      value = time;//delay初期値の数値に戻す
+      $(childs).removeClass("popUpFunc");
+      value = time;
     }
   })
 }

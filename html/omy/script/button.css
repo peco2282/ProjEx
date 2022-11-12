@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.gradient {
+    display: inline-block;
+    color: #000;
+    padding: 18px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.5s ease-out;
+    height: 20px;
+}
+
+/* ボタン上 */
+.gradient:hover {
+    transform: scale(0.90);
+}
+
+/* ボタン */
+.wordpress {
+    background: linear-gradient(45deg, #000000 0, #88ff00 20%, #00ffff 50%, #ff8888 80%, #ffffff 100%);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+    color: #000;
+}
+
+.top {
+    background: linear-gradient(45deg, #ffffff 0%, #FFCC00 50%, #ff0088 100% );
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+
+.html1 {
+    background: linear-gradient(45deg, #FF8300, #FFCC00, #E9FF00);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html2 {
+    background: linear-gradient(45deg, #00FFED, #0026FF, #FA00FF);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html3 {
+    background: linear-gradient(45deg, #FF00FF, #FF003F, #FF7F00);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}
+
+.html4 {
+    background: linear-gradient(45deg, #E5FF00, #00FF00, #00FFE9);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}

@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+.animation span {
+    opacity: 0;
+}
+
+.animation.appeartext span {
+    animation:text_anime 10ms ease-out forwards;
+}
+
+@keyframes text_anime {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* 背景グラデーション */
 
 .index {
     width: 100%;
@@ -30,7 +44,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(45deg, #FF8300, #FFCC00, #E9FF00);
-    background-size: 200% 200%;
+    background-size: 2000% 2000%;
     animation: bggradient 3s ease infinite;
 
 }

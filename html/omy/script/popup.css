@@ -1,19 +1,22 @@
 @charset "UTF-8";
 
 .flex {
-    /*display: flex;*/
     flex-wrap: wrap;
 }
 
+/*
+ポップアップ用
+*/
 .pop {
     width: inherit;
     position: center;
     padding: 20px;
     margin: 20px 20px 20px 20px;
-    background: #666;
+    background: #CCAA00;
     color: #fff;
     box-sizing:border-box;
     list-style: none;
+    border: solid 5px #FFF500;
 }
 
 .pop {
@@ -29,6 +32,7 @@ li.popup {
     opacity: 0;
 }
 
+/* キーフレーム */
 @keyframes popUpFunc {
     from {
         opacity: 0;
